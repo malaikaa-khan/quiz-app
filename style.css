@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+html,body{
+    background-color: rgb(4, 30, 80);
+}
+.container{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 30, 80);
+    
+}
+.score{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 27px;
+}
+.quiz-container{
+    width: 40vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 9px;
+    padding-left: 22px;
+    flex-direction: column;
+    display: flex;
+}
+
+.quiz-container h1{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #001e4d;
+    text-align: center;
+
+}
+#start{
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+}
+
+.question-box{
+     margin-top: 2vh;
+     margin-bottom: 2vh;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.option{
+    width: 37vw;
+    height: 5vh;
+    border:1px solid black;
+    display: flex;
+    border-radius: 5px;
+   align-items: center;
+    padding-left: 8px;
+    margin-top: 1vh;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.option:hover{
+   background-color: rgba(137, 147, 160, 0.856);
+}
+
+.btn{
+    font-size: 15px;
+    padding: 11px 12px;
+    border-radius:5px;
+    color: #fff;
+    border: 1px solid #222;
+    cursor: pointer;
+    background-color: #001e4d;
+    align-self: center;
+    margin-top: 2vh;
+    align-self: center;
+    padding: 12px 48px;
+}
+.option.selected{
+    background-color: #001e4d;
+    color: #fff;
+}
+.display-alert{
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    height: 7vh;
+    align-items: center;
+    padding-left:  15px ;
+    display: none;
+}
+@media (max-width:375px){
+    .quiz-container {
+        width: 92vw;
+    }
+    .option{
+        width: 83vw;
+        padding-left: 8px;
+        margin-top: 1.2vh;
+       
+    }
+   
+}
+
+
+@media (max-width:1024px){
+    .quiz-container {
+        width: 92vw;
+    }
+    .option{
+        width: 83vw;
+        padding-left: 8px;
+        margin-top: 1.2vh;
+       
+    }
+}
